@@ -1,4 +1,4 @@
-print("Choose from the following weather conditions sunny, rainy, or cold.")
+#print("Choose from the following weather conditions sunny, rainy, or cold.")
 
 weather = input("What's the weather like today?(sunny/rainy/cold): ")
 
