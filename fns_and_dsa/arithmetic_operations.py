@@ -9,6 +9,8 @@ def perform_operation(num1, num2, operation):
         if operation == 'divide':
             if num2 != 0:
                 return num1 / num2
-            else: print("Cannot perform operation")
+            elif num2 == 0:
+                print("Cannot perform operation")
+            break
         
    
