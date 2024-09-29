@@ -28,7 +28,7 @@ def temperature_conversion_tool():
             raise ValueError("Invalid input. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
     
     except ValueError as e:
-        print(f"Error: {e}. Please enter a valid numeric temperature and unit.")
+        print("Invalid temperature. Please enter a numeric value.")
 
 if __name__ == "__main__":
     temperature_conversion_tool()
