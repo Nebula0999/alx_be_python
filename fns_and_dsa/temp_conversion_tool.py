@@ -1,6 +1,6 @@
-
-FAHRENHEIT_TO_CELSIUS_FACTOR = (5/9)
-CELSIUS_TO_FAHRENHEIT_FACTOR = (9/5)
+# Define global conversion factors
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 
 def convert_to_celsius(fahrenheit):
@@ -11,7 +11,6 @@ def convert_to_fahrenheit(celsius):
     fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
     return fahrenheit
 
-# Function to interact with the user and handle input
 def temperature_conversion_tool():
     try:
         temp = float(input("Enter the temperature to convert: "))
@@ -31,7 +30,6 @@ def temperature_conversion_tool():
     except ValueError as e:
         print(f"Error: {e}. Please enter a valid numeric temperature and unit.")
 
-# Main function to run the script
 if __name__ == "__main__":
     temperature_conversion_tool()
 
